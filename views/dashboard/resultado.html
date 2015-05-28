@@ -1,0 +1,25 @@
+<div>
+    <a ui-sref=overview class="pull-right btn btn-primary btn-outline btn-rounded">voltar ao formulário</a> 
+    <h2>Resultado<small></small></h2>
+    <!--   <span class="glyphicon glyphicon-dashboard bg-fade"></span> -->
+    <div class=jumbotron>
+        <div class=container>
+            <h1>Resultado</h1>
+            <p>Resultado comparativo: Avaliação pessoal vs Avaliação do grupo.</p>
+            <!--         <p> <a class="btn btn-primary btn-lg btn-outline btn-rounded">Learn more</a> </p>-->
+
+
+            <table class="table table-condensed">
+                <td>Módulo</td><td>Avaliação pessoal</td><td>Avaliação do Grupo (Média)</td>    
+                <tr ng-repeat="r in resultado">
+                    <td>{{r.nome}}</td><td><span>{{r.avaliacao_pessoal}}</span></td><td><span>{{r.avaliacao_grupo}}</span></td>    
+                </tr>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+
+
+
